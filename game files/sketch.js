@@ -16,7 +16,7 @@ function setup() {
     saveButton.style("font-size", "2vw");
     saveButton.mousePressed(saveSnowflake);
 
-    para = createP('Save and send your snowflake to my instagram to get featured! [ spidey_codes ]')
+    para = createP('Save and send your snowflake to my instagram to get featured! (Username: spidey_codes)')
     para.style("font-size", "2vw");
     angleMode(DEGREES);
 
