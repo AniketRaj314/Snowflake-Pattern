@@ -7,12 +7,19 @@ function setup() {
     createCanvas(width, height);
     background(0);
     clearButton = createButton('Clear');
+    clearButton.position(width + 20, 50);
+    clearButton.style("font-size", "2vw");
     clearButton.mousePressed(clearCanvas);
 
     saveButton = createButton('Save');
+    saveButton.position(width + 20, 150);
+    saveButton.style("font-size", "2vw");
     saveButton.mousePressed(saveSnowflake);
+
+    para = createP('Save and send your snowflake to my instagram to get featured! [ spidey_codes ]')
+    para.style("font-size", "2vw");
     angleMode(DEGREES);
-    alert('Click on save button below the canvas to save your drawing!');
+
 }
 
 function clearCanvas() {
