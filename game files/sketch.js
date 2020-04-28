@@ -12,6 +12,7 @@ function setup() {
     saveButton = createButton('Save');
     saveButton.mousePressed(saveSnowflake);
     angleMode(DEGREES);
+    alert('Click on save button below the canvas to save your drawing!');
 }
 
 function clearCanvas() {
@@ -37,7 +38,7 @@ function draw() {
             let angle = 360 / symmetry;
             for (let i = 0; i < symmetry; i++) {
                 rotate(angle);
-                strokeWeight(4);
+                strokeWeight(6);
                 line(mx, my, pmx, pmy);
                 push();
                 scale(1, -1);
